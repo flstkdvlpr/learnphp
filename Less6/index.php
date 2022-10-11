@@ -7,11 +7,13 @@
     <title><?= "Новая страница"; ?></title>
 </head>
 <?php
+
 //Классы и константы
 require 'FirstClass.php';
 $myclass = new Firstclass();
 $myclass->$armor = 300;
 echo $myclass->$armor
+
 ?>
 <br>
 <?php
@@ -28,8 +30,11 @@ echo constant($name);
 ?>
 <br>
 <?php
-echo "Путь до файла ". __FILE__ . "<br>"
+require 'funtions.php';
+echo "Путь до файла ". __FILE__ . "<br>";
+say_hi($say);
 ?>
+
 <body>
 
 </body>
