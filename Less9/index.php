@@ -8,11 +8,16 @@
 </head>
 <body>
 
-    <ul>
-        <li><a href="?name=">blog</a></li>
-        <li><a href="?name=">shop</a></li>
-        <li><a href="?name="></a>about</li>
-    </ul>
+    <button><a href="?name=update">Обновить</a></button>
+
+        <?php
+            $response = $_GET['update'];
+            switch($response){
+                case "update": 
+                    require "connect.php";
+                    break;
+            }
+        ?>
     
 </body>
 </html>
